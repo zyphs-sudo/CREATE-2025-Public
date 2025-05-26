@@ -1,0 +1,52 @@
+/* General body styles */
+body.login, body.register, body.index {
+    
+}
+
+/* Container style */
+.form {
+    
+}
+
+/* Form elements */
+form {
+    
+}
+
+h2 {
+    
+}
+
+label {
+    
+}
+
+input[type="text"],
+input[type="password"] {
+    
+}
+
+/* Submit button */
+input[type="submit"] {
+    
+}
+
+input[type="submit"]:hover {
+
+}
+
+/* Home button */
+button {
+    
+}
+
+/* Error message */
+p {
+}
+
+/* Link under form */
+a {
+}
+
+a:hover {
+}
