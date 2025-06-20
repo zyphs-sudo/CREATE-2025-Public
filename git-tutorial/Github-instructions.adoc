@@ -1,0 +1,146 @@
+# GitHub Setup Activity Introduction
+Welcome to the GitHub set up activity! In this activity, you will get a chance to learn about git, Github and get a chance to create and set up your account on the lab computers! 
+
+## What are git and GitHub?
+Git is a version control system that allows people to work on software projects together. Git keeps track of all the changes created by each member of the team, and allows file sharing within the team members. 
+
+Since git is a tool used through the command line interface (CLI), GitHub offers an interface to use some of the git functions, and host git repositories (or projects) online. GitHub offers a visual graphics based interface that offers a more beginner friendly access to your git repositories. 
+
+## Setting up GitHub on the Lab Computers
+The following set of instructions will walk you through how to create a GitHub account and access your repos using git through the CLI. 
+
+### Create a GitHub Account
+NOTE: you can skip this step if you already have a GitHub account. You can feel free to skip to the next section if you already have an account.
+
+. Visit https://github.com/ using a browser on the lab computer that you are logged into. 
+** Click on the "Sign up" button. 
+** You will be asked to enter the following information: 
+*** Your email, (use an email account that you can access in a few minutes)
+*** A password, (do not share this with anyone, but make sure it is something you can remember. Your password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter.) 
+*** A username, (make sure this is appropriate)
+*** Your country/region. If you are from Canada, you can leave it as is, otherwise change it to what it should be. 
+** Click on "Continue". You may be asked to solve a simple puzzle to ensure that you are not a robot. 
+. Once you have created your account successfully, you will be directed to your home page. If you are prompted to log in, please do so using the username and password you just selected. 
+
+### Log in to Your Account
+NOTE: You can skip this section if you are already able to access your github dashboard. 
+
+. Visit https://github.com/ using a browser on the lab computer that you are logged into and click on the "Sign in" button. 
+. You will be prompted to enter your username/email and password. Enter this information, and click on "Sign in". 
+** If you are prompted to perform any Two-factor authentication, please select the "send code via SMS" one if possible. Even if you usually use the passkey on your own device, this will not work on the lab computers. 
+. Once you have completed the Two-factor authentication, you should be able to access your github account from the browser. 
+
+### Accessing Repositories from Git
+Now that we have successfully logged onto GitHub on our devices, it is time for us to access it using the terminal so we can create a local version of a repository. 
+
+#### Create an SSH Key
+
+For this, we need to create something called SSH keys, which your computer will use to communicate with GitHub. 
+
+* Open the terminal on your computer. You can do so by pressing on the Windows button on your keyboard, which brings up all the apps on the computer. From there, search for "Terminal", and open it. It should look something like this: 
+
+image::https://www.tecmint.com/wp-content/uploads/2022/06/AlmaLinux-9-Info.png[]
+
+* Change directory to the .ssh directory using the command below: 
+```
+cd ~/.ssh
+```
+* Paste the text below, replacing the email used in the example with your GitHub email address.
+```
+ssh-keygen -t ed25519 -C "your_email@example.com"
+``` 
+* This creates a new SSH key, using the provided email as a label.
+```
+> Generating public/private ALGORITHM key pair.
+```
+* When you're prompted to "Enter a file in which to save the key", you can press Enter to accept the default file location. You should not have any other keypair files in that folder, so you should be good to use the default name.
+```
+> Enter a file in which to save the key (/home/YOU/.ssh/id_ALGORITHM):[Press enter]
+```
+* Now you will need to enter a password for this file. You can set this to be something simple you remember. 
+
+NOTE: As you type in the password, you will not see the screen change. However, the terminal is still taking in your input. 
+
+```
+> Enter passphrase (empty for no passphrase): [Type a passphrase]
+> Enter same passphrase again: [Type passphrase again]
+```
+
+#### Allow Your Computer to Use This Key
+Now that we have created an SSH key, we need to allow our computer to use that when communicating with GitHub. So, we will add instruct our computer's agent to do that. 
+
+* First, let's activate the agent using the command below: 
+```
+eval "$(ssh-agent -s)"
+```
+* Now direct the agent to use the key you just created: 
+```
+ssh-add ~/.ssh/id_ed25519
+```
+#### Adding SSH Key to GitHub Web
+Since we are using the key to communicate with GitHub, we also need to let them know of the key. We can do this by adding an SSH authentication key. 
+
+* First we need to copy the key. Print out the content of the key using the command below: 
+```
+cat ~/.ssh/id_ed25519.pub
+```
+* Then select and copy the contents of the id_ed25519.pub file displayed in the terminal to your clipboard. 
+* Go back to your GitHub account at https://github.com/. 
+* Click on your profile picture at the top right corner and click on "Settings".  
+* On the left hand side, you will see a sidebar of different options. Click on `SSH and GPG keys`
+* Next to SSH Keys, click on the green button that says "New SSH Key". 
+** For "Title", enter "Create-key", 
+** For "Key type", you can keep it as "Authentication Key", 
+** For "Key", paste the contents of your keyboard.
+* Click on the green button that says "Add SSH Key". 
+
+And now you are ready to access your repositories using Git! Lets try it out! 
+
+### Accessing Git Repos Through the Terminal
+To access a git repo, we need to first create it. 
+
+* Click on your profile picture and go to "Your Repositories". 
+* Click on the green button that says "New". 
+* Set the repository name to be "Create-trial-YOUR-NAME". Replace YOUR-NAME with your name. Scroll down to click on "Create Repository".
+* Now if you go back to your repositories, you should see the one you just created. 
+* Click on the name of the repo, and click on the green button that says "Code". 
+* It will reveal a menu like this: 
+
+image::git.png[]
+
+* Click on SSH and copy the link you see below. 
+
+* In your file system, create a folder called CREATE-SWE-2025. And change  to that directory on your terminal. Use the following command to do so (change path/to/CREATE-SWE-2025 with the actual path to CREATE-SWE-2025): 
+```
+cd path/to/CREATE-SWE-2025
+```
+
+* Now paste the following command on your terminal: 
+```
+git clone <link you copied from github>
+```
+This should create a new folder with the same name as your repository. You can check by using the following command: 
+```
+ls
+```
+### Making a Change to the Git Repo
+Now that we have accessed our git repo, we can try to make and publish (or push) a change to the repository. 
+
+* Use the file system to navigate to the repository and create a new text file (.txt). 
+* Go back to the terminal and type in the command below. This should give you a summary of the local changes made to your repo.   
+```
+git status
+```
+* Type in the following commands in your terminal to add the files to your index, so you can push it to the remote copy of your repo replacing <your file name> with the name of your file: 
+```
+git add <your file name> 
+```
+* Now we want to commit our changes with a descriptive comment that explains the changes made in that commit: 
+```
+git commit -m "Added a new text file."
+```
+* Now we are ready to push using the following code: 
+```
+git push 
+```
+Now if you go back to your repo on github, you should see the new file, as well as the new commit you just created! 
