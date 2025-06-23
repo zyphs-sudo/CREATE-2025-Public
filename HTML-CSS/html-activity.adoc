@@ -6,7 +6,7 @@ about to write.
 
 *Your first task:* With your partner, try to identify the function of each line 
 of code for the head, and afterwards check your answers at 
-the bottom of this document.
+the bottom of this document. If you are unfamiliar with any of them, take your best guess! 
 
 . Add an *h1 element* to create a title on the page, and 
 set it to the following text:
