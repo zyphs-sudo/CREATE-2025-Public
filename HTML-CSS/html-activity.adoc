@@ -8,6 +8,8 @@ about to write.
 of code for the head, and afterwards check your answers at 
 the bottom of this document. If you are unfamiliar with any of them, take your best guess! 
 
+Now you've reviewed the head of the document, it's time to edit the body. Move your cursor in between the two body tags, and follow the instructions below.
+
 . Add an *h1 element* to create a title on the page, and 
 set it to the following text:
 ```
