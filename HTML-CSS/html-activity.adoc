@@ -48,7 +48,7 @@ d. Little Pebbles
 e. 18feet Espresso Bar & The Cheong
 ```
 [start=6]
-. Add image elements in each div underneath the h2. Each of the cafés above should source a different image using the appropriate *attribute*. The image addresses are provided below:
+. Add image elements in each div underneath the h2. Each of the cafés above should source a different image using the appropriate *attribute*. The image addresses are provided below, just copy the link address:
 * https://thebloomcafe.ca/cdn/shop/files/S__9150471.jpg?v=1737402552&width=3200[Bloom Cafe]
 * https://rs-menus-api.roocdn.com/images/bc88c52b-2abd-4ce2-8c7b-7ae20c58e728/image.jpeg[Tsujiri]
 * https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfuKHRijGRMOIuVqgb8VQIsLogCmJQcY6bhA&s[Matcha Matcha]
