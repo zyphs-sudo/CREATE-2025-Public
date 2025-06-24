@@ -106,7 +106,7 @@ Table of Contents
 ```
 [start=2]
 . Create another ordered list element beneath it, and add 5 list elements.
-The point of this table of contents is to give our readers an easy way to access each of the cafés we’re listing, so we’re going to make them clickable links by using the *anchor element (<a> </a>)*.
+The point of this table of contents is to give our readers an easy way to access each of the cafés we’re listing, so we’re going to make their content clickable links by using the *anchor element (<a> </a>)*.
 
 Recall that the anchor element has an *href attribute* that you can attach links to; linking to either other web pages or sections within your document. This is why we took the time to separate each list element into *div elements*, to make it easier for us to set up the table of contents!
 
