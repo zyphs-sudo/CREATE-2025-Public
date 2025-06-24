@@ -94,8 +94,7 @@ for those seeking a unique and flavorful experience.
 
 We’re done with the main content of this page! If you have the time, you might want to
 try your hand at the challenge below, which involves some HTML you’re familiar with and
-also a bit of reading on new topics. This can be challenging! Take your time, and if you need
-help just call us over :)
+also a bit of reading on new topics. This can be challenging! Take your time, and if you need help just call us over :)
 
 ## Challenge: Adding a Table of Contents
 
