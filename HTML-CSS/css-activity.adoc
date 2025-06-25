@@ -42,11 +42,11 @@ own projects, you would normally have to play around and pick your own colors on
 
 *Media and Overall Format:* +
 *img* +
-- height is 150px
+- height is 150px +
 - border-radius is 10% (smooths out the image outline to a rounded rectangle)
 
 *body* +
-- background-color is #e8dbb7
+- background-color is #e8dbb7 +
 - padding is 1rem 6rem (this is a shorthand form to set the padding for the top/bottom and left/right sides respectively)
 
 *.wrap-text* +
@@ -60,7 +60,7 @@ own projects, you would normally have to play around and pick your own colors on
 *hr* +
 - border is 0 +
 - height is 1px +
-- background is rgb(46, 37, 28)
+- background is rgb(46, 37, 28) +
 - margin-top is 3rem
 
 These properties effectively change the color of the hr element by reducing its original
@@ -84,16 +84,16 @@ once it’s been visited, the color of the link when you hover over it with the 
 color of the link when it is clicked.
 
 *.contents-pic* +
-- margin-left is 25%
-- width is 30%
+- margin-left is 25% +
+- width is 30% +
 - height is 30%
 
 *li* +
-- margin-bottom is 3px
+- margin-bottom is 3px +
 
 *ol* +
-- float is left
-- margin-left is 4rem
+- float is left +
+- margin-left is 4rem 
 
 *Adaptive Behaviour* +
 *html* +
@@ -114,7 +114,7 @@ All that’s left is to implement it in the HTML file.
 
 [begin=2]
 . For each div element in the ordered list element (NOT in the table of contents), add
-the class “pad”.
+the class “pad”. +
 . In each image element, add the class "wrap-text".
 
 Congrats! You've just created a café webpage!
