@@ -116,8 +116,8 @@ Again, here is an example of the code behind a link to YouTube: https://www.yout
 <a href=”https://www.youtube.com/”> <p> Link text displayed </p> </a>
 ```
 Using the anchor element with a section in your webpage is similar, but you need to define the
-section you’re linking to with an *id selector*.
-For example, if I had an anchor element with an href attribute of *#my-link*, I would need an *h1 element* with an *id selector* of *my-link* for it to properly link to the respective section:
+section you’re linking to with an *id attribute*.
+For example, if I had an anchor element with an href attribute of *#my-link*, I would need an *h1 element* with an *id attribute* of *my-link* for it to properly link to the respective section:
 ```
 <a href=”#my-link”> <p> Link to a different section </p> </a> ...
 <h1 id=”my-link”> This is the heading that the anchor attribute links to </h1>
@@ -130,7 +130,7 @@ The desired output is as follows, with each entry being a clickable link to the 
 
 image::contents.png[]
 
-Finally underneath the ordered list element, insert an image element with a class attribute of *contents-pic* for https://obsessedwithjapan.com/wp-content/uploads/2021/01/Light-Cafe%CC%81-Nagoya-3D-Latte-Art-Photo-by-Cindy-Bissig-1.jpg [this image].
+Finally underneath the ordered list element, insert an image element with a class attribute of *contents-pic* for https://obsessedwithjapan.com/wp-content/uploads/2021/01/Light-Cafe%CC%81-Nagoya-3D-Latte-Art-Photo-by-Cindy-Bissig-1.jpg[this image].
 
 ## Solutions: 
 ```html
