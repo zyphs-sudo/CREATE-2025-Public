@@ -6,7 +6,9 @@ about to write.
 
 *Your first task:* With your partner, try to identify the function of each line 
 of code for the head, and afterwards check your answers at 
-the bottom of this document.
+the bottom of this document. If you are unfamiliar with any of them, take your best guess!
+
+Now you've reviewed the head of the document, it's time to edit the body. Move your cursor in between the two body tags, and follow the instructions below.
 
 . Add an *h1 element* to create a title on the page, and 
 set it to the following text:
@@ -29,14 +31,14 @@ break - perfect for locals and visitors alike.
 [start=3]
 . Create your first *section element* below it. This will contain all 
 the cafés in a list format, so create an *ordered list element* 
-nested within it. (Hint: What are the first letters of the
+nested within it. (Recall: What are the first letters of the
 words in “ordered list”?)
 
 . For each café in this page, we should add div elements to 
 help us further separate the content. Nest 5 div elements 
 in the ordered list element.
 
-. In each div element, nest list elements (Hint: The first 
+. In each div element, nest list elements (Recall: The first 
 2 letters of the word “list”) using the following café names (Also, make each of these list elements an *h2*.):
 ```html 
 a. Bloom Café
@@ -46,7 +48,7 @@ d. Little Pebbles
 e. 18feet Espresso Bar & The Cheong
 ```
 [start=6]
-. Add image elements in each div underneath the h2. Each of the cafés above should source a different image. The image addresses are provided below:
+. Add image elements in each div underneath the h2. Each of the cafés above should source a different image using the appropriate *attribute*. The image addresses are provided below, just copy the link address:
 * https://thebloomcafe.ca/cdn/shop/files/S__9150471.jpg?v=1737402552&width=3200[Bloom Cafe]
 * https://rs-menus-api.roocdn.com/images/bc88c52b-2abd-4ce2-8c7b-7ae20c58e728/image.jpeg[Tsujiri]
 * https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfuKHRijGRMOIuVqgb8VQIsLogCmJQcY6bhA&s[Matcha Matcha]
