@@ -25,7 +25,7 @@ as specified.
 
 *h2* +
 - font-family is Literata +
-- color is #402e18
+- color is #402e18 +
 - margin-left is 4rem
 
 *h3* +
@@ -99,7 +99,7 @@ color of the link when it is clicked.
 *html* +
 - scroll-behaviour is smooth
 
-*@media(max-wdith: 700px)* +
+*@media(max-width: 700px)* +
 - has another nested .pad class with attribute padding-bottom +
 - padding-bottom is 2vw
 
