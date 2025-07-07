@@ -21,4 +21,4 @@ Don't delete the code below! Needed for running the app.
 """
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
