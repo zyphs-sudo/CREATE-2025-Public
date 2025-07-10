@@ -24,12 +24,44 @@ def index():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    return render_template('login.html', login_info=login_info)
+    error = None
+    if request.method == 'POST':
+        username = request.form.get('username')
+        password = request.form.get('password')
+
+        if (username in login_info 
+            and login_info[username] == password):
+            return "<h1>Welcome to the Flask Form!</h1>"
+        elif (username in login_info 
+            and login_info[username] != password):
+            error =  "Incorrect password!"
+        elif username not in login_info:
+            error = "Username not found!"
+    return render_template('login.html', error=error)
     
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    return render_template('register.html')
+    error = None
+    if request.method == 'POST':
+        if request.form["username"] in login_info.keys():
+            error = "Username already exists"
+        elif request.form["password"] == None:
+            error = "Password cannot be empty"
+        elif request.form["username"] == None:
+            error = "Username cannot be empty"
+        elif (request.form["username"] == "" 
+            or request.form["password"] == ""):
+            error = "Username and password cannot be empty"
+        else: 
+            login_info[request.form["username"]] = request.form["password"]
+            app.config["USERNAME"] = request.form["username"]
+            app.config["PASSWORD"] = request.form["password"]
+            return f"""
+            <h1>Registration successful! Welcome, {app.config["USERNAME"]}!</h1>
+            <button onclick="location.href='/'">Go to Home</button>
+            """
+    return render_template('register.html', register_error=error)
 
 if __name__ == "__main__":
     app.run()
