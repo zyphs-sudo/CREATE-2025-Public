@@ -1,0 +1,79 @@
+/* 
+This file contains the complete code for the CSS workshop for CREATE 2025: SWE.
+*/
+
+
+/* Table of Contents*/
+a:link {
+    color: #41518c;
+} 
+
+a:visited {
+    color: #372f69;
+}
+a:hover {
+    color: #0b1847;
+}
+a:active {
+    color: rgb(120, 140, 186);
+}
+
+/* Fonts and Text Setting*/
+h1 {
+    font-family: "Sofia";
+    color: #8a581c; 
+    font-size: 50px
+}
+
+h2{
+    font-family: "Literata";
+    color: #402e18;
+}
+
+h3 {
+    font-family: "Sorts Mill Goudy";
+    color: #402e18;
+}
+
+p {
+    font-family: "Winky Rough";
+    color: #402e18;
+
+}
+
+/* Media and Overall Format*/
+img {
+    height: 150px;
+}
+
+body {
+    background-color: #e8dbb7;
+}
+
+.wrap-text {
+    float: left; 
+    margin-right: 20px;
+ }
+
+.pad {
+    padding-bottom: 110px;
+}
+
+/* Other Elements */
+hr {
+    border:0;
+    height:1px;
+    background:rgb(46, 37, 28);
+}
+
+/* Adaptive Behaviour */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 700px) {
+    .pad{
+        padding-bottom: 2vw;
+    }
+}
