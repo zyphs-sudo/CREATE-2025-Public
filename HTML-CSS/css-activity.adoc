@@ -32,7 +32,7 @@ as specified.
 - font-family is Sorts Mill Goudy +
 - color is #402e18
 
-*p* +
+*p, a* +
 - font-family is Winky Rough +
 - color is #402e18
 
