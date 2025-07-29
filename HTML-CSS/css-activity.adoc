@@ -118,9 +118,9 @@ All that’s left is to implement it in the HTML file.
 [begin=2]
 . For each div element in the ordered list element (NOT in the table of contents), add
 the class “pad”. +
-. In each image element, add the class "wrap-text".
+. In each image element NOT in the table of contents, add the class "wrap-text".
 . For the Table of Contents, make sure to add id attributes matching the hrefs for each of the cafes so that we don't have broken links!
-. For the image in the table of contents, add the class "contents-pic"
+. For the image in the table of contents, add the class "contents-pic".
 
 Congrats! You've just created a café webpage!
 
