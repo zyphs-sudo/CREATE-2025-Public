@@ -36,9 +36,6 @@ as specified.
 - font-family is Winky Rough +
 - color is #402e18
 
-*.fancy-font* +
-- font-family is Winky Rough
-
 Notice how all the font families were imported in the head of the HTML document! In your
 own projects, you would normally have to play around and pick your own colors online
 (search “color picker”) as well as your own fonts (search “google fonts”).
@@ -120,7 +117,6 @@ All that’s left is to implement it in the HTML file.
 the class “pad”. +
 . In each image element NOT in the table of contents, add the class "wrap-text".
 . For the Table of Contents, make sure to add id attributes matching the hrefs for each of the cafes so that we don't have broken links!
-. For the image in the table of contents, add the class "contents-pic".
 
 Congrats! You've just created a café webpage!
 
