@@ -100,7 +100,7 @@ color of the link when it is clicked.
 
 *Adaptive Behaviour* +
 *html* +
-- scroll-behaviour is smooth
+- scroll-behavior is smooth
 
 *@media(max-width: 700px)* +
 - has another nested .pad class with attribute padding-bottom +
